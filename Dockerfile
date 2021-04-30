@@ -10,7 +10,6 @@ RUN native-image \
         -H:IncludeResources='hudson/cli/client/Messages.*[.]properties' \
         --enable-http --enable-https \
         -jar /cli.jar
-# TODO -webSocket does not work: jakarta.websocket.DeploymentException: io.jenkins.cli.shaded.org.glassfish.tyrus.container.jdk.client.JdkClientContainer
 
 FROM scratch
 COPY --from=builder /cli /jenkins-cli
