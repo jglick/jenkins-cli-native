@@ -3,4 +3,4 @@ build/jenkins-cli: Dockerfile
 
 .PHONY: try
 try: build/jenkins-cli
-	./build/jenkins-cli -auth $(AUTH) -s $(SERVER) help
+	time ./build/jenkins-cli -auth $(AUTH) -s $(SERVER) help
