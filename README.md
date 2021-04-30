@@ -11,5 +11,5 @@ You will need a reasonably recent version of Docker.
 
 ```bash
 make
-./jenkins/cli -s https://my.jenkins/ -auth me:deadbeef1234 help
+./build/jenkins-cli -s https://my.jenkins/ -auth me:deadbeef1234 help
 ```
