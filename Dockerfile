@@ -1,6 +1,6 @@
 FROM ghcr.io/graalvm/graalvm-ce:java8-21.1.0 AS builder
 RUN gu install native-image
-ENV VERSION 2.277.3
+ENV VERSION 2.289.1
 ADD https://repo.jenkins-ci.org/public/org/jenkins-ci/main/cli/$VERSION/cli-$VERSION.jar /cli.jar
 RUN native-image \
         --install-exit-handlers \
